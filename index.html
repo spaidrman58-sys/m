@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>M-O ❤️</title>
+<style>
+*{box-sizing:border-box}html,body{margin:0;min-height:100%;font-family:Tahoma,Arial,sans-serif}body{background:#090711;color:#fff;overflow:hidden}
+body:before{content:"";position:fixed;inset:0;z-index:-2;background:radial-gradient(circle at 50% 0%,#7d3b68 0,#30142f 40%,#090711 82%)}
+body:after{content:"";position:fixed;inset:0;z-index:-1;opacity:.35;background-image:radial-gradient(#fff 1px,transparent 1px);background-size:70px 70px}
+.screen{min-height:100vh;display:flex;align-items:center;justify-content:center;padding:18px}.card{width:min(700px,94vw);max-height:94vh;overflow:auto;text-align:center;padding:28px 20px;border:1px solid #ffffff25;border-radius:30px;background:#ffffff12;backdrop-filter:blur(18px);box-shadow:0 25px 90px #0009}.card::-webkit-scrollbar{width:0}
+.emoji{font-size:65px;animation:pulse 1.8s infinite}h1{font-size:38px;margin:8px 0 15px}h2{font-size:28px;margin:8px 0 15px}p{font-size:18px;line-height:2;margin:8px 0}.box{padding:20px;margin:18px 0;border-radius:23px;background:#00000024;border:1px solid #ffffff16}.big{font-size:25px;font-weight:800}
+input{width:100%;padding:16px;border:0;border-radius:16px;margin:14px 0;text-align:center;font-size:19px;outline:0}button,.song{border:0;border-radius:16px;padding:14px 24px;margin:5px;background:#fff;color:#56183f;font-size:17px;font-weight:800;text-decoration:none;cursor:pointer}.error{min-height:26px;color:#ffd2e5}.hint{min-height:26px;margin:10px 0;color:#ffd8e9}.page{display:none}.page.active{display:block;animation:enter .6s ease}.dots{margin-top:18px}.dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:#fff;opacity:.25;margin:4px}.dot.on{opacity:1}.floating{position:fixed;bottom:-50px;z-index:10;pointer-events:none;animation:rise linear forwards}
+@keyframes pulse{50%{transform:scale(1.1)}}@keyframes enter{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:none}}@keyframes rise{to{transform:translateY(-115vh) rotate(35deg);opacity:0}}
+</style>
+</head>
+<body>
+<section id="login" class="screen"><div class="card">
+<div class="emoji">🔐❤️</div><h1>For M-O</h1>
+<p>في مفاجأة صغيرة معمولة مخصوص ليك/ليكي...</p><p>بس لازم الباسورد الأول 😌❤️</p>
+<input id="password" type="password" placeholder="اكتب الباسورد هنا" autocomplete="off">
+<button onclick="unlock()">دخول ❤️</button><div id="error" class="error"></div><div id="hint" class="hint"></div>
+<p style="font-size:14px;opacity:.7">من شخص بيقدّر وجودك جدًا ❤️</p>
+</div></section>
+
+<section id="site" class="screen" style="display:none"><div class="card">
+<div id="page1" class="page active"><div class="emoji">💗</div><h1>إلى M-O...</h1><div class="box"><p>مش عارف أبدأ الكلام منين، لأن مهما كتبت هيفضل جوايا كلام أكتر.</p><p>بس عارف إنك شخص عزيز عليا جدًا، ووجودك في حياتي له معنى كبير.</p><p>وعشان كده عملتلك المكان ده مخصوص. ❤️</p></div><button onclick="next()">كمّل/ي ✨</button></div>
+<div id="page2" class="page"><div class="emoji">🌷</div><h2>تعرف/ي إيه اللي بحبه؟</h2><div class="box"><p>بحب تفاصيلك الصغيرة اللي يمكن أنت/إنتِ مش واخد/ة بالك منها.</p><p>بحب الكلام اللي بينا، والضحك، والحاجات اللي ملهاش معنى عند أي حد غيرنا.</p><p>وجودك لوحده قادر يخلي اليوم العادي أحلى. ❤️</p></div><button onclick="next()">كمّل/ي 💌</button></div>
+<div id="page3" class="page"><div class="emoji">🥹❤️</div><h2>من قلبي بجد</h2><div class="box"><p>أنا بقدّر وجودك أكتر مما بعرف أوصف.</p><p>نفسي دايمًا أشوفك مبسوط/ة ومرتاح/ة، وأكون من الناس اللي وجودهم بيطمنك.</p><p>ولو في يوم الدنيا ضايقتك، افتكر/ي إن مكانتك عندي عمرها ما كانت حاجة عادية.</p></div><button onclick="next()">لسه في كلام ❤️</button></div>
+<div id="page4" class="page"><div class="emoji">💞</div><h2>كلمة من غير لف</h2><div class="box"><p>يمكن الكلام ده كله يبان كتير، بس الحقيقة إن اللي جوايا أكتر.</p><p class="big">إنت/إنتِ غالي/ة عليا أوي يا M-O. ❤️</p><p>ومش محتاج سبب عشان أفرح بوجودك.</p></div><button onclick="next()">آخر حاجة 🌙</button></div>
+<div id="page5" class="page"><div class="emoji">🎵❤️</div><h2>والأغنية دي ليك/ليكي</h2><div class="box"><p class="big">Until I Found You — Stephen Sanchez</p><p>هادية ورومانسية، وحسيت إنها ماشية مع الجو ده جدًا. 🤍</p><a class="song" href="https://www.youtube.com/results?search_query=Stephen+Sanchez+Until+I+Found+You" target="_blank" rel="noopener">▶️ تشغيل الأغنية</a></div><div class="box"><p class="big">بحبك يا M-O ❤️</p><p>وده كل اللي كنت عايز أوصلهولك.</p><p>خلي الصفحة دي ذكرى حلوة عندك. 🌷</p></div><div class="emoji">❤️💗💕</div></div>
+<div id="dots" class="dots"></div>
+</div></section>
+<script>
+const PASS='بحبك';let tries=0,current=1;const hints=['هنت ١: كلمة قولتهالك كتير ❤️','هنت ٢: أكتر كلمة قلتها لك 😌❤️','هنت ٣: الكلمة اللي بيعترفوا بيها ❤️','هنت ٤: الباسورد هو «بحبك»... فشلة بقى 😂❤️'];
+function unlock(){if(password.value.trim()===PASS){login.style.display='none';site.style.display='flex';makeDots();hearts()}else{hint.textContent=hints[Math.min(tries,3)];tries++}}
+password.addEventListener('keydown',e=>{if(e.key==='Enter')unlock()});function next(){let pages=document.querySelectorAll('.page');pages[current-1].classList.remove('active');current++;if(current<=pages.length)pages[current-1].classList.add('active');document.querySelectorAll('.dot').forEach((d,i)=>d.classList.toggle('on',i===current-1))}
+function makeDots(){for(let i=1;i<=5;i++){let d=document.createElement('span');d.className='dot'+(i===1?' on':'');dots.appendChild(d)}}
+function hearts(){setInterval(()=>{let x=document.createElement('span');x.className='floating';x.textContent=['❤️','💗','💕','💖','💞','🌷','✨'][Math.floor(Math.random()*7)];x.style.left=Math.random()*100+'vw';x.style.fontSize=(18+Math.random()*25)+'px';x.style.animationDuration=(5+Math.random()*5)+'s';document.body.appendChild(x);setTimeout(()=>x.remove(),11000)},500)}
+</script>
+</body></html>
